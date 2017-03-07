@@ -8,8 +8,8 @@ import React from 'react';
 const MyCustomPage = () => {
   return (
     <div>
-      <h1>Welcome To My Custom Page!</h1>
-      <p>Nice to meet you.</p>
+      <h1>Welcome To Our Competition Page!</h1>
+      <p>Coming soon.</p>
     </div>
   )
 }

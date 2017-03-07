@@ -8,11 +8,14 @@ Package.onUse( function(api) {
 
   api.use([
     'fourseven:scss',
-
+ 
     'nova:core',
     'nova:base-components',
     'nova:posts',
-    'nova:users'
+    'nova:users',
+    'xavcz:nova-forms-upload'
+   // 'xavcz:nova-wires'
+
   ]);
 
   api.addFiles([
@@ -20,7 +23,8 @@ Package.onUse( function(api) {
   ], ['client', 'server']);
 
   api.addFiles([
-    'lib/stylesheets/custom.scss'
+    'lib/stylesheets/custom.scss',
+    'lib/stylesheets/custom.css'
   ], ['client']);
 
   api.addFiles([

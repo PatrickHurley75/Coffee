@@ -373,7 +373,7 @@ Telescope.callbacks.add("posts.edit.async", PostsEditRunPostApprovedCallbacks);
 /**
  * @summary Add notification callback when a post is approved
  */
-function PostsApprovedNotification (post) {
+/*function PostsApprovedNotification (post) {
   if (typeof Telescope.notifications !== "undefined") {
     var notificationData = {
       post: _.pick(post, '_id', 'userId', 'title', 'url')
@@ -383,7 +383,7 @@ function PostsApprovedNotification (post) {
   }
 }
 Telescope.callbacks.add("posts.approve.async", PostsApprovedNotification);
-
+*/
 // ------------------------------------- users.remove.async -------------------------------- //
 
 function UsersRemoveDeletePosts (user, options) {

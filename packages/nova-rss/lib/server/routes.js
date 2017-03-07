@@ -24,6 +24,6 @@ Picker.route('/rss/category/:slug/feed.xml', function(params, req, res, next) {
   res.end(servePostRSS({view: 'new', cat: params.slug}, '/rss/category/:slug/feed.xml'));
 });
 
-Picker.route('/rss/comments.xml', function(params, req, res, next) {
+/*Picker.route('/rss/comments.xml', function(params, req, res, next) {
   res.end(serveCommentRSS({}, '/rss/comments.xml'));
-});
+});*/

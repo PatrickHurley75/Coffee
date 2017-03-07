@@ -39,7 +39,7 @@ Posts.views.add("top", function (terms) {
 /**
  * @summary New view
  */
-Posts.views.add("new", function (terms) {
+Posts.views.add("hot", function (terms) {
   return {
     ...Posts.views.baseParameters,
     options: {sort: {sticky: -1, postedAt: -1}}
@@ -57,9 +57,20 @@ Posts.views.add("best", function (terms) {
 });
 
 /**
+ * @summary Main view
+ */
+Posts.views.add("main", function (terms) {
+  return {
+    ...Posts.views.baseParameters,
+    options: {sort: {sticky: -1, lastCommentedAt: -1}}
+  };
+});
+
+
+/**
  * @summary Pending view
  */
-Posts.views.add("pending", function (terms) {
+Posts.views.add("all_news", function (terms) {
   return {
     selector: {
       status: Posts.config.STATUS_PENDING

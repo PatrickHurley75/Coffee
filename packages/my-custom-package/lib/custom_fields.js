@@ -8,7 +8,7 @@ Note that this requires our custom package to depend on nova:posts and nova:user
 */
 
 // check if user can create a new post
-const canInsert = user => Users.canDo(user, "posts.new");
+const canInsert = user => Users.canDo(user, "posts.view.deleted.all");
 // check if user can edit a post
 const canEdit = Users.canEdit;
 

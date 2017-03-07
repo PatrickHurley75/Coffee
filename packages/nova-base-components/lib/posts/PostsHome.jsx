@@ -6,7 +6,7 @@ import Posts from "meteor/nova:posts";
 class PostsHome extends Component {
 
   getDefaultView() {
-    return {view: 'top'}
+    return {view: 'hot'}
   }
 
   render() {

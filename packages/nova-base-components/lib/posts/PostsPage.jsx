@@ -12,7 +12,7 @@ const PostsPage = ({document, currentUser}) => {
 
       <Telescope.components.HeadTags url={Posts.getLink(post)} title={post.title} image={post.thumbnailUrl} />
       
-      <Telescope.components.PostsItem post={post}/>
+      <Telescope.components.PostsItem2 post={post}/>
 
       {post.htmlBody ? <div className="posts-page-body" dangerouslySetInnerHTML={htmlBody}></div> : null}
 

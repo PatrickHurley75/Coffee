@@ -29,6 +29,7 @@ Telescope.registerComponent("PostsLoadMore",        require('./posts/PostsLoadMo
 Telescope.registerComponent("PostsNoMore",          require('./posts/PostsNoMore.jsx'));
 Telescope.registerComponent("PostsNoResults",       require('./posts/PostsNoResults.jsx'));
 Telescope.registerComponent("PostsItem",            require('./posts/PostsItem.jsx'));
+Telescope.registerComponent("PostsItem2",           require('./posts/PostsItem2.jsx'));
 Telescope.registerComponent("PostsLoading",         require('./posts/PostsLoading.jsx'));
 Telescope.registerComponent("PostsViews",           require('./posts/PostsViews.jsx'));
 Telescope.registerComponent("PostsList",            require('./posts/PostsList.jsx'));

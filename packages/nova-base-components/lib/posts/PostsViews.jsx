@@ -7,8 +7,11 @@ import Users from 'meteor/nova:users';
 
 const PostsViews = (props, context) => {
 
-  let views = ["top", "new", "best"];
-  const adminViews = ["pending", "rejected", "scheduled"];
+  let views = ["hot", "all_news"];
+  const adminViews = ["rejected", "scheduled"];
+
+  // let views = ["hot", "main", "top", "best", "all_news"];
+  // const adminViews = ["rejected", "scheduled"];
 
   if (Users.canDo(context.currentUser, "posts.edit.all")) {
     views = views.concat(adminViews);
@@ -46,7 +49,7 @@ PostsViews.propTypes = {
 }
 
 PostsViews.defaultProps = {
-  defaultView: "top"
+  defaultView: "hot"
 }
 
 PostsViews.contextTypes = {

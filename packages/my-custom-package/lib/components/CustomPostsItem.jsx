@@ -26,9 +26,14 @@ class CustomPostsItem extends Telescope.components.PostsItem {
     return (
       <div className={postClass}>
 
-        <div className="posts-item-vote">
-          <Telescope.components.Vote post={post} />
-        </div>
+                <div className="posts-item-vote posts-item-awesome-vote">
+  <Telescope.components.AwesomeVote post={post} type="base"/>
+  <div className="vote-actions-block">
+    <Telescope.components.AwesomeVote post={post} type="upvote"/>
+    <Telescope.components.AwesomeVote post={post} type="downvote"/>
+  </div>
+</div>
+
 
         {post.thumbnailUrl ? <Telescope.components.PostsThumbnail post={post}/> : null}
 

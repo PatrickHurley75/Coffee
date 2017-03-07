@@ -25,7 +25,7 @@ NovaEmail.addEmails({
       return postAuthorName+' has a new post pending approval: '+postTitle;
     },
     getTestObject: getPost
-  },
+  }/*,
 
   postApproved: {
     template: "postApproved",
@@ -35,6 +35,6 @@ NovaEmail.addEmails({
       return 'Your post “'+postTitle+'” has been approved';
     },
     getTestObject: getPost
-  }
+  }*/
 
 });
